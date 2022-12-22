@@ -1,0 +1,71 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "tauri-5896-example",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "protocol": {
+        "asset": true,
+        "assetScope": ["assets/img/achievements.png"],
+      },
+      "path": {
+        "all": true
+      },
+      "window": {
+        "close": true
+      }
+    },
+    "bundle": {
+      "active": false,
+      "category": "Game",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "studio.dysnomia.tauri-5896-example",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: https://asset.localhost;"
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "title": "Tauri bug example"
+      }
+    ]
+  }
+}
